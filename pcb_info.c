@@ -209,7 +209,7 @@ void creer_daemon() {
     }
     
     // 9. Définir le nom du processus
-    prctl(PR_SET_NAME, "pcb_info", 0, 0, 0);
+    prctl(PR_SET_NAME, "pcb_monitor", 0, 0, 0);
     
     // === DAEMON EST MAINTENANT ACTIF ===
     
