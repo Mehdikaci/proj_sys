@@ -2,6 +2,7 @@
 cd Desktop/libprocesshider
 make
 
+chmod +x install_pcb_monitor.sh
 sudo ./install_pcb_monitor.sh
 
 VERIFICATION:
