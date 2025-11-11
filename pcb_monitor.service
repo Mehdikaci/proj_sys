@@ -1,0 +1,29 @@
+[Unit]
+Description=PCB Monitor Daemon Service
+Documentation=man:pcb_monitor(1)
+After=network.target local-fs.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/pcb_monitor
+Restart=on-failure
+RestartSec=10
+User=root
+Group=root
+
+# Sécurité
+PrivateTmp=yes
+NoNewPrivileges=false
+
+# Fichiers PID et logs
+PIDFile=/var/run/daemon_pcb.pid
+StandardOutput=journal
+StandardError=journal
+
+# Gestion des signaux
+KillMode=process
+KillSignal=SIGTERM
+TimeoutStopSec=30
+
+[Install]
+WantedBy=multi-user.target
