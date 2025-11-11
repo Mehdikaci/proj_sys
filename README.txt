@@ -1,9 +1,8 @@
-mkdir Desktop/libprocesshider
-//mettre pcb_info.c et processhider.c et Makefile dans ce dossier
+
 cd Desktop/libprocesshider
 make
-gcc -o pcb_info pcb_info.c
-./pcb_info
+
+sudo ./install_pcb_monitor.sh
 
 VERIFICATION:
 cd /tmp/
