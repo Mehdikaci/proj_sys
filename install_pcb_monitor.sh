@@ -45,13 +45,7 @@ else
     echo "⚠️  libprocesshider.so non trouvé - installation sans bibliothèque"
 fi
 
-# Étape 4: Création des répertoires nécessaires
-echo ""
-echo "📂 Étape 4: Création des répertoires système..."
-mkdir -p /var/run
-mkdir -p /var/log
-mkdir -p /var/lib/pcb_monitor
-echo "✅ Répertoires créés"
+
 
 # Étape 5: Installation du service systemd
 echo ""
