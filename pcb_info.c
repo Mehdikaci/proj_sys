@@ -258,12 +258,12 @@ void creer_daemon() {
         printf("\n╔════════════════════════════════════════════════╗\n");
         printf("║         PROCESSUS PARENT (CRÉATEUR)           ║\n");
         printf("╚════════════════════════════════════════════════╝\n");
-        printf("📌 PID du PÈRE:       %d\n", pid_parent);
-        printf("📌 PID du FILS (1er): %d\n", pid);
-        printf("📌 PID FINAL DAEMON:  %d ✅\n\n", pid_final);
-        printf("✅ Daemon créé avec succès!\n");
-        printf("📁 Fichier PID: %s\n", PID_FILE);
-        printf("📄 Fichier LOG: %s\n", LOG_FILE);
+        printf(" PID du PÈRE:       %d\n", pid_parent);
+        printf(" PID du FILS (1er): %d\n", pid);
+        printf(" PID FINAL DAEMON:  %d \n\n", pid_final);
+        printf(" Daemon créé avec succès!\n");
+        printf(" Fichier PID: %s\n", PID_FILE);
+        printf(" Fichier LOG: %s\n", LOG_FILE);
         exit(0);
     }
     
