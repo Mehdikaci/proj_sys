@@ -35,14 +35,17 @@ echo " Exécutable installé dans /usr/local/bin/"
 
 # Étape 3: Installation de la bibliothèque (optionnel)
 echo ""
-echo " Étape 3: Vérification de libprocesshider.so..."
+echo "✓ Étape 3: Vérification de libprocesshider.so..."
+
+
+mkdir -p /opt/pcb_monitor
+
 if [ -f "libprocesshider.so" ]; then
     cp libprocesshider.so /opt/pcb_monitor/
     chmod 644 /opt/pcb_monitor/libprocesshider.so
-    echo " Bibliothèque copiée vers /opt/pcb_monitor/"
+    echo "✓ Bibliothèque copiée vers /opt/pcb_monitor/"
 else
-    echo " libprocesshider.so non trouvé - installation sans bibliothèque"
-    mkdir -p /opt/pcb_monitor
+    echo "⚠ libprocesshider.so non trouvé - installation sans bibliothèque"
 fi
 
 # Étape 4: Création des répertoires nécessaires
